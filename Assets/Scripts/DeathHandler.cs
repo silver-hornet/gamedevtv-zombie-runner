@@ -15,6 +15,7 @@ public class DeathHandler : MonoBehaviour
     {
         gameOverCanvas.enabled = true;
         Time.timeScale = 0; // stop time so that we don't have any weird conflict between the game wanting to use the cursor and the cursor being needed for the game over screen
+        FindObjectOfType<WeaponSwitcher>().enabled = false;
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
     }

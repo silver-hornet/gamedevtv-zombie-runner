@@ -249,8 +249,9 @@ GameObject:
   - component: {fileID: 2337074158996965286}
   - component: {fileID: 2337074159000356742}
   - component: {fileID: 2337074158999389510}
+  - component: {fileID: 9123289272039563776}
   m_Layer: 0
-  m_Name: Carbine
+  m_Name: Shotgun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -265,7 +266,7 @@ Transform:
   m_GameObject: {fileID: 2337074158997199750}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.25, y: 2, z: 4}
   m_Children:
   - {fileID: 2337074158996965284}
   - {fileID: 2337074158996965280}
@@ -302,7 +303,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 25f311c6bbd46e0448befa180cda78ed, type: 2}
+  - {fileID: 2100000, guid: 9b2d1c98510e84cc390d215c8f82a6d9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -323,6 +324,27 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &9123289272039563776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2337074158997199750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eac865a2816d44e6c869a400fcaa36de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FPCamera: {fileID: 0}
+  range: 10
+  damage: 60
+  muzzleFlash: {fileID: 8127757873182126152}
+  hitEffect: {fileID: 4124918087873034410, guid: d8e54479acf404c7db3f5d4d311fe335,
+    type: 3}
+  ammoSlot: {fileID: 0}
+  ammoType: 1
+  timeBetweenShots: 2
 --- !u!1 &2337074158997199752
 GameObject:
   m_ObjectHideFlags: 0
@@ -663,6 +685,12 @@ PrefabInstance:
 --- !u!4 &7826752629043386119 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3350055855090824723, guid: 4a60d8477aafac045a1f56d3a60c7813,
+    type: 3}
+  m_PrefabInstance: {fileID: 4819973108827660564}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &8127757873182126152 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 3614249443508621660, guid: 4a60d8477aafac045a1f56d3a60c7813,
     type: 3}
   m_PrefabInstance: {fileID: 4819973108827660564}
   m_PrefabAsset: {fileID: 0}
